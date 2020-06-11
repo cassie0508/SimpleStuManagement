@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>welcome you, student</h1>
+    <form action="./student/choose" method="post">
+        <input type="username" name="username" th:value="${user.username}" />
+        <input type="submit"  value="选择课程" >
+<!--        <input th:value=${user.username} type="submit">-->
+    </form>
+    <br/>
+    <form action="./student/find" method="post">
+        <input type="username" name="username" th:value="${user.username}" />
+        <input type="submit" value="查看课程成绩">
+    </form>
+</body>
+</html>
